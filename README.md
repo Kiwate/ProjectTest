@@ -1,8 +1,8 @@
-#ProjectTest
+# ProjectTest
 
 C'est parti pour se mettre bien.
 
-##TODO
+## TODO
 
-1.HTML/CSS/JS pour 3 pages.
-2.Transfère en partie pour Wordpress. 
+1. HTML/CSS/JS pour 3 pages.
+2. Transfère en partie pour Wordpress. 
