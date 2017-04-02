@@ -5,6 +5,25 @@
    ========================================================================== */
 body {
 	font-family: 'Medula One', cursive;
+	font-size: 18px;
+}
+
+main a:focus {
+	outline:none;
+	color: #FFF;
+	text-decoration: none;
+}
+
+footer a:focus{
+	outline: none;
+	color: #a0565d ;
+	text-decoration:none;
+}
+
+main {
+	background-color: #efefef;
+	padding-bottom: 60px;
+
 }
 
 .navbar-default {
@@ -14,34 +33,45 @@ body {
 	box-shadow: none;
 }
 
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
+	color: #cf3e3e;
+}
+
 .navbar-default .navbar-nav>li>a{
 	color: #FFF;
 	font-size: 32px;
-	margin-right: 2.5em;
+	margin-right: 70px;
 	margin-top: 1em;
+	transform: scale(1);
+    transition: transform 0.5s ease 0.1s;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
 	color: #cf3e3e;
 	transform: scale(1.2);
-    transition: transform 1s ease 0.1s
+    transition: transform 1s ease 0.1s;
+}
+
+.navbar-default .navbar-toggle {
+	background-color: #DDD;
 }
 
 .navbar-brand img {
 	height: 100px;
 	width: 180px;
-	margin-left: 8em;
-	zoom:1;
+	margin-left: 130px;
+	transform: scale(1);
+    transition: transform 0.5s ease 0.1s;
 }
 
 .navbar-brand img:hover {
 	transform: scale(1.2);
-    transition: transform 1s ease 0.1s
+    transition: transform 1s ease 0.1s;
 }
 
 header {
 	background-image: url(../img/background.png);
-	height: 600px;
+	height: 500px;
 	background-position: 80% 95%;
 	background-repeat: no-repeat;
 }
@@ -55,13 +85,97 @@ header {
 	padding-right: 20px;
 	padding-left:20px;
 	border-radius: 3px;
+	transition: color 0.5s;
 }
 
 #headinfo:hover {
 	color:#cf3e3e;
 }
 
+#choice {
+	font-size: 40px;
+	padding-top: 25px;
+}
 
+.offre {
+	border-radius: 3px;
+	position: relative;
+	height: 290px;
+}
+
+.offre figure {
+	width: 100%;
+	height:100%;
+}
+
+.offre img {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.textOffer {
+	opacity: 0.75;
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+	background-color: #255662;
+	color: #FFF;
+	width: 100%;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px; 
+	height: 90px;
+	font-size: 27px;
+}
+
+.textOffer figcaption {
+	padding-left: 80px;
+}
+
+.textOffer p {
+	padding-right: 60px;
+}
+
+.more {
+	background: #e2afaf;
+	display: inline-block;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	font-size: 25px;
+	color :#FFF;
+	text-decoration: none;
+}	
+
+
+.more:hover {
+	background: linear-gradient(to bottom,#cf3e3e 0,#ae2f2f 100%);
+	color: #FFF;
+	text-decoration:none;
+}
+
+footer {
+	background-color: #FFF;
+	height: 130px;
+	padding-top: 40px;
+	font-size: 25px;
+	color: #676464;
+}
+
+footer a {
+	color: #a0565d;
+}
+footer a:hover {
+	text-decoration: none;
+	color: #b33131;
+}
+
+.Social {
+	width: 45px;
+}
 
 
 
