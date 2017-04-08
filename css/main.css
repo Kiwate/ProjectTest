@@ -8,6 +8,24 @@ body {
 	font-size: 18px;
 }
 
+.trait1 {
+	background-color: #000;
+	height: 1px;
+	margin-bottom: 10px;
+	margin-right: 17px; 
+	width: 70px;
+	display: inline-block;
+}
+
+.trait2 {
+	background-color: #000;
+	height: 1px;
+	margin-bottom: 10px;
+	margin-left: 17px; 
+	width: 70px;
+	display: inline-block;
+}
+
 main a:focus {
 	outline:none;
 	color: #FFF;
@@ -18,13 +36,12 @@ footer a:focus{
 	outline: none;
 	color: #a0565d ;
 	text-decoration:none;
-}
+} 
 
 main {
 	background-color: #efefef;
 	padding-bottom: 60px;
 }
-
 
 .navbar-default {
 	background-color: transparent;
@@ -55,6 +72,52 @@ main {
 
 .navbar-default .navbar-toggle {
 	background-color: #DDD;
+	padding: 16px 14px;
+}
+
+@media (max-width: 1000px) {
+	.navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+		margin-top: 7.5px;
+	}
+	.navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+  		display:block !important;
+	}
+}
+
+
+
+.navbar-collapse {
+	border-top: 0;
+	-webkit-box-shadow:none;
+	box-shadow: none;
 }
 
 .navbar-brand img {
@@ -98,7 +161,6 @@ header {
 	letter-spacing: 2px;
 }
 
-
 .textOffer {
 	opacity: 0.90;
 	position: absolute;
@@ -125,6 +187,12 @@ header {
 	-webkit-transition:all 0.5s ease-in-out;
 	transform: scale(3) rotate(10deg);
 	-webkit-transform:scale(3) rotate(10deg);
+}
+
+@media (max-width: 500px) {
+	.textOffer {
+		font-size: 20px;
+	}
 }
 
 
@@ -234,6 +302,78 @@ footer a:hover {
     -o-background-size: 100%;
     background-size: 100%;
 }
+
+@media (max-width: 980px) {
+	.item:nth-child(1) {
+    background: url(../img/Background1.png) no-repeat;
+    -webkit-background-size: 150%;
+    -moz-background-size: 150%;
+    -o-background-size: 150%;
+    background-size: 150%;
+}
+.item:nth-child(2) {
+    background: url(../img/Background2.png) no-repeat;
+    -webkit-background-size: 150%;
+    -moz-background-size: 150%;
+    -o-background-size: 150%;
+    background-size: 150%;
+}
+.item:nth-child(3) {
+    background: url(../img/Background3.png) no-repeat;
+    -webkit-background-size: 150%;
+    -moz-background-size: 150%;
+    -o-background-size: 150%;
+    background-size: 150%;
+}
+}
+
+@media (max-width: 800px) {
+	.item:nth-child(1) {
+    background: url(../img/Background1.png) no-repeat;
+    -webkit-background-size: 180%;
+    -moz-background-size: 180%;
+    -o-background-size: 180%;
+    background-size: 180%;
+}
+.item:nth-child(2) {
+    background: url(../img/Background2.png) no-repeat;
+    -webkit-background-size: 180%;
+    -moz-background-size: 180%;
+    -o-background-size: 180%;
+    background-size: 180%;
+}
+.item:nth-child(3) {
+    background: url(../img/Background3.png) no-repeat;
+    -webkit-background-size: 180%;
+    -moz-background-size: 180%;
+    -o-background-size: 180%;
+    background-size: 180%;
+}
+}
+
+@media (max-width: 600) {
+	.item:nth-child(1) {
+    background: url(../img/Background1.png);
+    -webkit-background-size: 180%;
+    -moz-background-size: 180%;
+    -o-background-size: 180%;
+    background-size: 180%;
+}
+.item:nth-child(2) {
+    background: url(../img/Background2.png);
+    -webkit-background-size: 180%;
+    -moz-background-size: 180%;
+    -o-background-size: 180%;
+    background-size: 180%;
+}
+.item:nth-child(3) {
+    background: url(../img/Background3.png);
+    -webkit-background-size: 180%;
+    -moz-background-size: 180%;
+    -o-background-size: 180%;
+    background-size: 180%;
+}
+}
 .carousel {
     z-index: -99;
 }
@@ -253,10 +393,6 @@ img {
 
 article {
 	display: block;
-}
-
-.hentry {
-	margin: 0 0 1.5em;
 }
 
 .curb-effect img {
@@ -362,4 +498,3 @@ article {
 	padding-top: 20px;
 	width: 100%;
 }
-
