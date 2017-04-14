@@ -89,7 +89,9 @@ main {
         float: none !important;
     }
     .logowhite img {
+    	top: -60%;
     	left: 15%;
+    	height: 150px;
     }
     .navbar-toggle {
         display: block;
@@ -313,4 +315,9 @@ article {
 
 a {
 	color: #cf3e3e;
+}
+
+.submit {
+	background-image: linear-gradient(to bottom,#564343 0,#423737 100%);
+	color: #FFF;
 }
